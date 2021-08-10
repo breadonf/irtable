@@ -7,7 +7,7 @@ import { Grid } from "@material-ui/core";
     return (
       <div>
         <Grid container spacing={3} justifyContent={'center'}>
-          <Grid item xs={10} spacing={1} justifyContent={'center'}>
+          <Grid item xs={10} spacing={1}>
             <TableController />
           </Grid>
           <Grid item xs={10}>
