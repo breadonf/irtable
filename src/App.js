@@ -1,21 +1,20 @@
 import React from "react";
 import DataTable from "./Components/Table/Table";
 import TableController from "./Components/Table/TableController";
-import { Box } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 
-function App() {
+  function App() {
+    return (
+      <div>
+        <Grid container spacing={3} justifyContent={'center'}>
+          <Grid item xs={10} spacing={1} justifyContent={'center'}>
+            <TableController />
+          </Grid>
+          <Grid item xs={10}>
+            <DataTable />
+          </Grid>
+        </Grid>
+      </div>
+    )}
 
-  return (
-    <div>
-      <Box display='flex' p={3}>
-        <TableController />
-      </Box>
-      <Box display='flex' p={3}>
-        <DataTable />
-      </Box>
-
-    </div>
-  );
-}
-
-export default App;
+    export default App
